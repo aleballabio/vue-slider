@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#root',
     data: {
-        ActiveIndex: 0,
+        activeIndex: 0,
         arrSlides: [
             {
                 name: 'Svezia',
@@ -31,10 +31,7 @@ const app = new Vue({
                 name: 'Paradise',
                 image: '05.jpg',
                 text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
-            }
-        ]
-    }
-    methods: {
-
-    }
-})
+            },
+        ],
+    },
+});
