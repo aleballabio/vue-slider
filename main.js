@@ -52,9 +52,19 @@ const app = new Vue({
             else {
                 this.activeIndex--;
             }
-        }
+        },
+
+        time() {
+            nextImageTime = setInterval(this.nextImage, 3000);
+        },
+
+        stopTime() {
+            clearInterval(nextImageTime);
+        },
     },
 
-    setInterval(function() { this.activeIndex++ }, 3000),
+    created() {
+        this.time();
+    },
 
 });
