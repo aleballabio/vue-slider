@@ -56,6 +56,5 @@ const app = new Vue({
     },
 
     setInterval(function() { this.activeIndex++ }, 3000),
-    });
 
 });
