@@ -26,10 +26,9 @@
 					:class="index == activeIndex ? 'active' : '' ">
 					<img :src="'img/' + thumbnail.image" :alt="thumbnail.name">
 				</div>
+				<button @click="previousImage" class="btn-control btn-previus">&and;</button>
+				<button @click="nextImage" class="btn-control btn-next">&or;</button>
 			</div>
-
-			<button class="btn-control btn-previus">&and;</button>
-			<button class="btn-control btn-next">&or;</button>
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
