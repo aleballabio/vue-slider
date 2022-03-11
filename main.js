@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#root',
     data: {
+        babba: null,
         activeIndex: 0,
         arrSlides: [
             {
@@ -55,16 +56,19 @@ const app = new Vue({
         },
 
         time() {
-            nextImageTime = setInterval(this.nextImage, 3000);
+            this.babba = setInterval(this.nextImage, 3000);
+            console.log("miaoleave");
         },
 
         stopTime() {
-            clearInterval(nextImageTime);
+            clearInterval(this.babba);
+            console.log("miao");
         },
     },
 
     created() {
         this.time();
+
     },
 
 });

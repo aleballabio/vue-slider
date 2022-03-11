@@ -12,7 +12,7 @@
 
 <body>
 	<div id="root">
-		<div class="slider" @mouseenter="stopTime" @mousleave="time">
+		<div class="slider" @mouseover="stopTime" @mouseleave="time">
 			<div class="slide">
 				<img :src="'img/' + arrSlides[activeIndex].image" :alt="arrSlides[activeIndex].name">
 				<div class="slide-contents">
